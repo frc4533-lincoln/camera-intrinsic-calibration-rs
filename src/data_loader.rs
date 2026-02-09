@@ -33,7 +33,7 @@ fn path_to_timestamp(path: &Path) -> i64 {
 /// Uses `aprilgrid` detector to find tags.
 /// matches detected point IDs to 3D board coordinates.
 /// Returns `None` if the number of detected corners is less than `min_corners`.
-fn image_to_option_feature_frame(
+pub fn image_to_option_feature_frame(
     tag_detector: &TagDetector,
     img: &DynamicImage,
     board: &Board,
